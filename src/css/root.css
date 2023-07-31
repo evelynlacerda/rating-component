@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --withe: #ffffff;
+    --light-grey: #959eac;
+    --medium-grey: #7c8798;
+    --dark-blue: #262E38;
+    --darker-blue: #121417;
+
+    --orange: #fb7413;
+}

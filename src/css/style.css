@@ -1,0 +1,64 @@
+body {
+    background-color: var(--darker-blue, #121417);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 2.4rem;
+}
+
+.card {
+    width: 416px;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(98.96% 98.96% at 50.00% 0%, #232A34 0%, #181E27 100%);
+    padding: 3.2rem;
+    border-radius: 3.2rem;
+
+    & img {
+        width: 5rem;
+        height: 5rem;
+        background-color: var(--dark-blue, #262E38);
+        padding: 1.6rem;
+        border-radius: 50%;
+    }
+
+    & h1 {
+        color: var(--white, #fff);
+        font-size: 2.8rem;
+        margin: 3.2rem 0 .8rem;
+    }
+
+    & p {
+        color: var(--light-grey, #959eac);
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin: 0 0 2.4rem;
+    }
+
+    & .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 3.2rem;
+
+        & button {
+            background: var(--dark-blue, #262E38);
+            width: 5.2rem;
+            height: 5.2rem;
+            border-radius: 50%;
+            color: var(--medium-grey, #7c8798);
+            font-size: 1.4rem;
+        }
+    }
+
+    & form .btn {
+        width: 100%;
+        height: 4.8rem;
+        background: var(--orange, #fb7413);
+        border-radius: 2.4rem;
+        color: var(--white, #fff);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
