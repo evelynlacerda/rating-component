@@ -1,6 +1,7 @@
 body {
     background-color: var(--darker-blue, #121417);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -10,7 +11,7 @@ body {
 .card,
 .thank-you {
     width: 416px;
-    display: flex;
+    display: none;
     flex-direction: column;
     background: radial-gradient(98.96% 98.96% at 50.00% 0%, #232A34 0%, #181E27 100%);
     padding: 3.2rem;
@@ -52,6 +53,19 @@ p {
             border-radius: 50%;
             color: var(--medium-grey, #7c8798);
             font-size: 1.4rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: .2s ease-in-out;
+        }
+
+        & button:hover {
+            background: var(--medium-grey, #7c8798);
+            color: var(--white, #fff);
+        }
+
+        & .selected {
+            background: var(--orange, #fc7e24);
+            color: var(--white, #fff);
         }
     }
 
@@ -64,7 +78,15 @@ p {
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 2px;
+        cursor: pointer;
+        transition: .2s ease-in-out;
     }
+
+    & form .btn:hover {
+        background: var(--white, #fff);
+        color: var(--orange, #fc7e24);
+    }
+
 }
 
 .thank-you {
@@ -75,7 +97,7 @@ p {
         margin: 1.6rem 0 2.8rem;
     }
 
-    & .select {
+    & #select {
         background: var(--dark-blue, #262E38);
         color: var(--orange, #fc7e24);
         font-size: 1.4rem;
@@ -98,6 +120,6 @@ p {
     }
 }
 
-/* .active {
-    display: none;
-} */
+.active {
+    display: flex;
+}
