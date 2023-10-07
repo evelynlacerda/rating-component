@@ -9,7 +9,6 @@
 [💻 Click Here to Preview](https://evelynlacerda.github.io/rating-component/)
 
 </h3>
-<br>
 
 ### 🚀 Tecnologias Utilizadas:
 
