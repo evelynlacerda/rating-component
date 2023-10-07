@@ -123,3 +123,17 @@ p {
 .active {
     display: flex;
 }
+
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+
+    .card,
+    .thank-you {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        justify-content: center;
+    }
+}
